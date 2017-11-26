@@ -1,0 +1,25 @@
+{
+  "name": "burgerlogger",
+  "version": "1.0.0",
+  "description": "Burger Logger with MySQL, Node, Express, Handlebars and a custom ORM.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erfaanism/BurgerLogger.git"
+  },
+  "author": "Ali Darvishi",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Erfaanism/BurgerLogger/issues"
+  },
+  "homepage": "https://github.com/Erfaanism/BurgerLogger#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}

@@ -1,6 +1,6 @@
 <div class="container-fluid">
 	<div class="row align-items-center justify-content-center">
-		<div class="col-10">
+		<div class="col-11">
 			<div class="row">
 				<div class="col-12">
 					<div class="logo">
@@ -18,7 +18,8 @@
 							<thead>
 								<tr>
 									<th class="col-1 text-center" scope="col">#</th>
-									<th class="col-11 text-center" scope="col">Burger Name</th>
+									<th class="col-6 text-center" scope="col">Burger Name</th>
+									<th class="col-5 text-center" scope="col">Add at</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -27,6 +28,7 @@
 										<tr class="text-center readyBurgers" data-id="{{id}}">
 											<th scope="row">{{id}}</th>
 											<td>{{burger_name}}</td>
+											<td>{{created_at}}</td>
 										</tr>
 									{{/unless}}
 								{{/each}}
@@ -42,7 +44,8 @@
 							<thead>
 								<tr>
 									<th class="col-1 text-center" scope="col">#</th>
-									<th class="col-11 text-center" scope="col">Burger Name</th>
+									<th class="col-6 text-center" scope="col">Burger Name</th>
+									<th class="col-5 text-center" scope="col">Devoured at</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -51,6 +54,7 @@
 										<tr class="text-center devouredBurgers" data-id="{{id}}">
 											<th scope="row">{{id}}</th>
 											<td>{{burger_name}}</td>
+											<td>{{devoured_at}}</td>
 										</tr>
 									{{/if}}
 								{{/each}}

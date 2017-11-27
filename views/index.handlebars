@@ -1,0 +1,73 @@
+<div class="container-fluid">
+	<div class="row align-items-center justify-content-center">
+		<div class="col-10">
+			<div class="row">
+				<div class="col-12">
+					<div class="logo">
+						<img src="assets/img/burger.gif" alt="Burger Logo">
+						<h1 class="mt-3">Eat-Da-Veggie-Burger</h1>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-around">
+				<div class="col-5">
+					<h4 class="text-center">Ready</h4>
+					<p class="text-center blink-me">Click on any burger to devour!</p>
+					<div class="leftContainer">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th class="col-1 text-center" scope="col">#</th>
+									<th class="col-11 text-center" scope="col">Burger Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each burgers}}
+									{{#unless devoured}}
+										<tr class="text-center readyBurgers" data-id="{{id}}">
+											<th scope="row">{{id}}</th>
+											<td>{{burger_name}}</td>
+										</tr>
+									{{/unless}}
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-5">
+					<h4 class="text-center">Devoured</h4>
+					<p class="text-center blink-me">Click on any burger to undevour?!</p>
+					<div class="rightContainer">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th class="col-1 text-center" scope="col">#</th>
+									<th class="col-11 text-center" scope="col">Burger Name</th>
+								</tr>
+							</thead>
+							<tbody>
+								{{#each burgers}}
+									{{#if devoured}}
+										<tr class="text-center devouredBurgers" data-id="{{id}}">
+											<th scope="row">{{id}}</th>
+											<td>{{burger_name}}</td>
+										</tr>
+									{{/if}}
+								{{/each}}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="row align-items-center justify-content-center">
+				<div class="col-4">
+					<form id="burgerForm" method="POST">
+						<label for="burgerInput"></label>
+						<input type="text" id="burgerInput" placeholder="Name your burger">
+						<input id="submit" type="submit" value="Add Burger">
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

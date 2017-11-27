@@ -1,0 +1,95 @@
+body {
+    background-color: royalblue;
+    background-image: url(../img/bg.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-attachment: fixed;
+    color: orange;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+h4 {
+    text-decoration: underline;
+}
+
+.blink-me {
+    color: darkorange;
+    animation: blinker 1s ease infinite;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+.logo {
+    text-align: center;
+    padding: 30px;
+}
+
+.logo img {
+    max-width: 200px;
+}
+
+.leftContainer,
+.rightContainer {
+    min-height: 200px;
+    border: 1px solid orange;
+}
+
+.table {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.table th,
+.table td {
+    border: transparent;
+}
+
+.table thead th {
+    border-bottom: 1px solid orange;
+}
+
+.table tbody {
+    cursor: pointer;
+}
+
+.table tbody tr:hover {
+    background-color: darkcyan;
+    color: white;
+    font-weight: bold;
+}
+
+.table .col-5,
+.table .col-6 {
+    border-left: 1px solid orange
+}
+
+form {
+    text-align: center;
+}
+
+form input {
+    margin: 15px auto;
+    padding: 10px 5px;
+}
+
+form input[type='text'] {
+    background-color: orange;
+    color: white;
+    width: 100%;
+    border: 1px solid white;
+}
+
+form input[type='submit'] {
+    color: white;
+    width: 150px;
+    background-color: green;
+    border: 1px solid white;
+    font-weight: bold;
+    cursor: pointer;
+}
